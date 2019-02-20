@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:background="#C5E1A5">
+
+        <EditText
+            android:id="@+id/name_edit_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Name Here"
+            android:inputType="textCapWords"
+            android:gravity="left" />
+
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:text="Question 1"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Which Essential Oil comes from the plant in the image below, that is known to enhance mood?"
+            android:textSize="16sp"
+            android:padding="16dp"/>
+
+        <ImageView
+            android:id="@+id/bergamot_image_view"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bergamot" />
+
+        <EditText
+            android:id="@+id/answer_question_one"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Answer Here"
+            android:inputType="text"
+            android:gravity="left"
+            android:focusable="true"
+            android:imeOptions="actionDone" />
+
+
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:text="Question 2"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Which of these ancient contries were known to use Essential Oils?"
+            android:textSize="16sp"
+            android:padding="16dp"/>
+
+        <CheckBox
+            android:id="@+id/egypt_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:text="Egypt"
+            android:textSize="16sp"
+            android:onClick="onCheckboxClicked"/>
+
+        <CheckBox
+            android:id="@+id/israel_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:text="Israel"
+            android:textSize="16sp"
+            android:onClick="onCheckboxClicked"/>
+
+        <CheckBox
+            android:id="@+id/china_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:text="China"
+            android:textSize="16sp"
+            android:onClick="onCheckboxClicked"/>
+
+        <CheckBox
+            android:id="@+id/greece_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:text="Greece"
+            android:textSize="16sp"
+            android:onClick="onCheckboxClicked"/>
+
+        <CheckBox
+            android:id="@+id/ireland_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:text="Ireland"
+            android:textSize="16sp"
+            android:onClick="onCheckboxClicked"/>
+
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:text="Question 3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Which of the following Essential Oils can be applied neat(undiluted)?"
+            android:textSize="16sp"
+            android:padding="16dp"/>
+
+        <CheckBox
+            android:id="@+id/lavender_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:text="Lavender"
+            android:textSize="16sp"
+            android:onClick="onCheckboxClicked"/>
+
+        <CheckBox
+            android:id="@+id/lemon_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:text="Lemon"
+            android:textSize="16sp"
+            android:onClick="onCheckboxClicked"/>
+
+        <CheckBox
+            android:id="@+id/rosemary_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:text="Rosemary"
+            android:textSize="16sp"
+            android:onClick="onCheckboxClicked"/>
+
+        <CheckBox
+            android:id="@+id/lemongrass_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:text="Lemongrass"
+            android:textSize="16sp"
+            android:onClick="onCheckboxClicked"/>
+
+        <CheckBox
+            android:id="@+id/myrrh_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:text="Myrrh"
+            android:textSize="16sp"
+            android:onClick="onCheckboxClicked"/>
+
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:text="Question 4"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Which of the following Essential Oils should you avoid applying to skin that will be exposed to sunlight/UV light within 12 hours?"
+            android:textSize="16sp"
+            android:padding="16dp"/>
+
+        <CheckBox
+            android:id="@+id/thyme_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:text="Thyme"
+            android:textSize="16sp"
+            android:onClick="onCheckboxClicked"/>
+
+        <CheckBox
+            android:id="@+id/bergamot_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:text="Bergamot"
+            android:textSize="16sp"
+            android:onClick="onCheckboxClicked"/>
+
+        <CheckBox
+            android:id="@+id/lime_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:text="Lime"
+            android:textSize="16sp"
+            android:onClick="onCheckboxClicked"/>
+
+        <CheckBox
+            android:id="@+id/orange_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:text="Orange"
+            android:textSize="16sp"
+            android:onClick="onCheckboxClicked"/>
+
+        <CheckBox
+            android:id="@+id/grapefruit_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:text="Grapefruit"
+            android:textSize="16sp"
+            android:onClick="onCheckboxClicked"/>
+
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:text="Question 5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Which of the following Essential Oils have NOT been known to have a calming effect?"
+            android:textSize="16sp"
+            android:padding="16dp"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton android:id="@+id/radio_vetiver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vetiver"
+                android:onClick="onRadioButtonClicked"/>
+
+            <RadioButton android:id="@+id/radio_valerian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Valerian"
+                android:onClick="onRadioButtonClicked"/>
+
+            <RadioButton android:id="@+id/radio_ginger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ginger"
+                android:onClick="onRadioButtonClicked"/>
+
+            <RadioButton android:id="@+id/radio_cedarwood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cedarwood"
+                android:onClick="onRadioButtonClicked"/>
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:text="Question 6"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Which of the following Essential Oils have been known to heal scars and acne?"
+            android:textSize="16sp"
+            android:padding="16dp"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton android:id="@+id/radio_lavender_frankincense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lavender and Frankincense"
+                android:onClick="onRadioButtonClicked"/>
+
+            <RadioButton android:id="@+id/radio_patchouli_cinnamonbark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Patchouli and Cinnamon Bark"
+                android:onClick="onRadioButtonClicked"/>
+
+            <RadioButton android:id="@+id/radio_ylangylang_juniper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ylang Ylang and Juniper"
+                android:onClick="onRadioButtonClicked"/>
+
+            <RadioButton android:id="@+id/radio_spearmint_cypress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Spearmint and Cypress"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/submit_quiz_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:text="Submit Quiz"
+            android:clickable="true"
+            android:onClick="onButtonClickSubmit"/>
+
+        <ImageView
+            android:id="@+id/wintergreen_image_view"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:padding="16dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/wintergreen" />
+
+    </LinearLayout>
+</ScrollView>
